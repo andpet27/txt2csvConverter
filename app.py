@@ -9,4 +9,4 @@ fileName = filedialog.askopenfile(initialdir="/home", filetypes=[("Text files", 
 fileToConvert = pd.read_fwf(fileName)
 fileInput = simpledialog.askstring(title="CSV file name", prompt="Enter CSV file name")
 newFile = "%s.csv" %fileInput
-fileToConvert.to_csv(newFile)
+fileToConvert.to_csv(newFile, index=False)
